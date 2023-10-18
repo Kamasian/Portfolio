@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react"
 import Image from "../Image/Image"
-import testpelli from "../../assets/img/testpelli.webp"
+import testpelli from "/assets/img/testpelli.webp"
 import Cursor from "../Cursor/Cursor"
 import WindowWidthDetector from "../../components/WindowWidthDetector/WindowWidthDetector"
 
@@ -39,7 +39,7 @@ export default function Pellicule({ onIndexChange, projectList }) {
                                 className="projectItem"
                                 onClick={() => onIndexChange(index % itemCount)}
                                 style={{
-                                    transform: `translate(-${currentIndex * (windowWidth < 600 ? 200 : 0)}%, -${currentIndex * (windowWidth < 600 ? 0 : 200)}%)`,
+                                    transform: `translate(-${currentIndex * (windowWidth < 768 ? 200 : 0)}%, -${currentIndex * (windowWidth < 768 ? 0 : 200)}%)`,
                                     transition: "transform 1.5s ease",
                                     }}>
                                 <Image

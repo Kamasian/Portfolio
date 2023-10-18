@@ -7,10 +7,11 @@ footer {
     align-items: center;
     p {
         position: relative;
-        left: 5%;
+        left: 12%;
         font-size: 34px;
         color: #b4b49e;
         text-align: center;
+        padding-right: 20px;
     }
     div {
         position: absolute;
@@ -24,7 +25,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
     footer {
         p {
             font-size: 27px;
@@ -38,15 +39,20 @@ footer {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
     footer {
+        flex-direction: column;
         p {
-            font-size: 16px;
+            max-width: 145px;
+            font-size: 18px;
+            line-height: 25px;
+            left: 20px;
         }
         div {
-            top: 15px;
-            right: 10px;
-            column-gap: 10px;
+            flex-direction: column;
+            top: -41px;
+            right: 11px;
+            column-gap: 5px;
         }
     }
 }

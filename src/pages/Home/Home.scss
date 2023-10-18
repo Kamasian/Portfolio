@@ -75,21 +75,7 @@
     }
 }
 
-@media screen and (max-width: 750px) {
-    .mainHome {
-        height: calc(100vh - 171px);
-        .presentationText {
-            h2 {
-                font-size: 25px;
-            }
-            p {
-                font-size: 18px;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .mainHome {
         flex-direction: column;
         height: 100%;
@@ -97,7 +83,6 @@
         row-gap: 20px;
         .presentationText {
                 width: 90%;
-
             h2 {
                     font-size: 23px;
 
@@ -113,7 +98,6 @@
             img {
                 object-position: 50% 25%;
                 border-radius: 10px 50% 10px 50%;
-
             }
         }
     }

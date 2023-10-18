@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom"
 import { useState } from "react"
 import Image from "../../components/Image/Image"
-import Logo from "../../assets/img/Logo.webp"
+import Logo from "/assets/img/Logo.webp"
 
 export default function Header() {
     const location = useLocation()
@@ -36,7 +36,7 @@ export default function Header() {
                         </li>
                     </ul>
                 </div>
-                <Link to="/accueil">
+                <Link to="/">
                     <Image
                         src={Logo}
                         alt="Logo" />
@@ -45,8 +45,8 @@ export default function Header() {
                 <ul className={`nav-list-desktop ${menuOpen ? "open" : ""}`}>
                     <li>
                         <Link
-                            className={`linkWelcome ${location.pathname === "/accueil" ? "active" : ""}`}
-                            to="/accueil">
+                            className={`linkWelcome ${location.pathname === "/" ? "active" : ""}`}
+                            to="/">
                             Accueil
                         </Link>
                     </li>

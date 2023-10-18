@@ -133,28 +133,7 @@ nav {
     }
 }
 
-@media screen and (max-width: 750px) {
-    nav {
-        font-family: 'Libre Caslon Display', serif;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px 40px;
-        border-bottom: 1px solid #b4b49e;
-        & img {
-            height: 50px;
-        }
-        & h1 {
-            font-size: 40px;
-        }
-        .nav-list {
-            font-size: 25px;
-            column-gap: 25px;
-        }
-    }
-}
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     nav {
         justify-content: flex-start;
         column-gap: 20%;

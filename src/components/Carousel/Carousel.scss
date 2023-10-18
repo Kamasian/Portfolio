@@ -112,10 +112,11 @@
     }    
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
     .carousel-image {
-        
-        .carouselImageCurrent, .overlay {
+        height: 300px;
+                width: 100%;
+                .carouselImageCurrent, .overlay {
             height: 300px;
             width: 100%;
             left: 50%;
@@ -123,14 +124,6 @@
             transform: translate(-50%, -50%);
             border-radius: 50px;
         }
-        
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .carousel-image {
-        height: 300px;
-                width: 100%;
         .tickets {
             display: none;
         }

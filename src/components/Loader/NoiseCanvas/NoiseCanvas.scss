@@ -8,3 +8,10 @@
     pointer-events: none;
     opacity: .15;
 }
+
+@media (max-width: 768px) {
+    .noise {
+        position: fixed;
+        height: 100vh;
+    }
+}

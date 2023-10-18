@@ -27,31 +27,31 @@
 //      }
 // }
 
-import api from "../assets/img/technos/api.webp"
-import css from "../assets/img/technos/css-3.webp"
-import debug from "../assets/img/technos/debug.webp"
-import devtools from "../assets/img/technos/devtools.webp"
-import figma from "../assets/img/technos/figma.webp"
-import github from "../assets/img/technos/github.webp"
-import greenIt from "../assets/img/technos/green-it.webp"
-import html from "../assets/img/technos/html-5.webp"
-import jest from "../assets/img/technos/jest.webp"
-import js from "../assets/img/technos/js.webp"
-import lighthouse from "../assets/img/technos/lighthouse.webp"
-import mongodb from "../assets/img/technos/mongodb.webp"
-import react from "../assets/img/technos/react.webp"
-import redux from "../assets/img/technos/redux.webp"
-import sass from "../assets/img/technos/sass.webp"
-import seo from "../assets/img/technos/seo.webp"
-import swagger from "../assets/img/technos/swagger.webp"
-import voirLeCode from "../assets/img/icons/voirLeCode.webp"
-import voirLeSite from "../assets/img/icons/voirLeSite.webp"
+import api from "/assets/img/technos/api.webp"
+import css from "/assets/img/technos/css-3.webp"
+import debug from "/assets/img/technos/debug.webp"
+import devtools from "/assets/img/technos/devtools.webp"
+import figma from "/assets/img/technos/figma.webp"
+import github from "/assets/img/technos/github.webp"
+import greenIt from "/assets/img/technos/green-it.webp"
+import html from "/assets/img/technos/html-5.webp"
+import jest from "/assets/img/technos/jest.webp"
+import js from "/assets/img/technos/js.webp"
+import lighthouse from "/assets/img/technos/lighthouse.webp"
+import mongodb from "/assets/img/technos/mongodb.webp"
+import react from "/assets/img/technos/react.webp"
+import redux from "/assets/img/technos/redux.webp"
+import sass from "/assets/img/technos/sass.webp"
+import seo from "/assets/img/technos/seo.webp"
+import swagger from "/assets/img/technos/swagger.webp"
+import voirLeCode from "/assets/img/icons/voirLeCode.webp"
+import voirLeSite from "/assets/img/icons/voirLeSite.webp"
 
 export const projectList = [
-    {
+        {
         "id": "7",
         "title": "Argent Bank",
-        "imageUrl": "./src/assets/img/projects/Argent-Bank.webp",
+        "imageUrl": "/assets/img/projects/Argent-Bank.webp",
         "description": [
             "Ce projet consistait à travailler en tant que développeur front-end chez Argent Bank pour mettre en place le tableau de bord des utilisateurs d'une nouvelle banque en ligne.",
             "J'ai respecté les bonnes pratiques du Green Code pour optimiser images et code, assurant une expérience utilisateur optimale.",
@@ -71,7 +71,7 @@ export const projectList = [
     {
         "id": "6",
         "title": "724 Events",
-        "imageUrl": "./src/assets/img/projects/724-Events.webp",
+        "imageUrl": "/assets/img/projects/724-Events.webp",
         "description": [
             "Ce projet impliquait la finalisation et le débogage du site vitrine d'une agence événementielle, 724events.",
             "Le site, une page unique, avait été partiellement intégré par un développeur freelance précédent, mais des problèmes et des bugs subsistaient.",
@@ -91,7 +91,7 @@ export const projectList = [
     {
         "id": "5",
         "title": "Nina Carducci",
-        "imageUrl": "./src/assets/img/projects/Nina-Carducci.webp",
+        "imageUrl": "/assets/img/projects/Nina-Carducci.webp",
         "description": [
             "Ce projet consistait à proposer des services d'optimisation SEO à Nina Carducci, une photographe.",
             "L'objectif était d'optimiser son site web pour améliorer le référencement et la performance.",
@@ -117,7 +117,7 @@ export const projectList = [
     {
         "id": "4",
         "title": "Kasa",
-        "imageUrl": "./src/assets/img/projects/Kasa.webp",
+        "imageUrl": "/assets/img/projects/Kasa.webp",
         "description": [
             "Ce projet visait à moderniser le site web de Kasa, une entreprise de location d'appartements en France, en utilisant React pour développer des composants conformes aux maquettes Figma.",
             "Il a également inclus la mise en place de routes avec React Router, l'utilisation de Sass pour la stylisation, y compris des animations CSS, pour améliorer l'expérience utilisateur.",
@@ -137,7 +137,7 @@ export const projectList = [
     {
         "id": "3",
         "title": "Sophie Bluel",
-        "imageUrl": "./src/assets/img/projects/Sophie-Bluel.webp",
+        "imageUrl": "/assets/img/projects/Sophie-Bluel.webp",
         "description": [
             "Ce projet a été une étape clé de ma carrière de développeur front-end chez ArchiWebos.",
             "J'ai contribué au site portfolio d'une architecte d'intérieur en développant la page de présentation de ses travaux, en créant une page de connexion pour l'administrateur et en concevant une modale d'upload de médias.",
@@ -157,7 +157,7 @@ export const projectList = [
     {
         "id": "2",
         "title": "Print-It",
-        "imageUrl": "./src/assets/img/projects/Print-It.webp",
+        "imageUrl": "/assets/img/projects/Print-It.webp",
         "description": [
             "Ce projet avait pour but d'initier les apprenants au JavaScript en les guidant dans la création d'un carrousel interactif pour un site web.",
             "L'approche a commencé par l'ajout de flèches de navigation avec des Event Listeners.",
@@ -183,7 +183,7 @@ export const projectList = [
     {
         "id": "1",
         "title": "Ohmyfood",
-        "imageUrl": "./src/assets/img/projects/Ohmyfood.webp",
+        "imageUrl": "/assets/img/projects/Ohmyfood.webp",
         "description": [
             "Ce projet consistait à créer l'interface d'un site mobile avec des animations CSS pour Ohmyfood.",
             `En adoptant une approche "mobile first", j'ai permis aux clients de créer leurs menus de restaurant.`,
@@ -209,7 +209,7 @@ export const projectList = [
     {
         "id": "0",
         "title": "Booki",
-        "imageUrl": "./src/assets/img/projects/Booki.webp",
+        "imageUrl": "/assets/img/projects/Booki.webp",
         "description": [
             "Ce projet consistait à créer la page d'accueil d'une agence de voyage en utilisant HTML et CSS.",
             "Il a été réalisé en collaboration avec l'équipe de Booki et a été mis à jour pour simplifier le processus de développement.",

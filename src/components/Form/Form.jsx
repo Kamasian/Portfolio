@@ -4,15 +4,16 @@ import emailjs from "@emailjs/browser"
 export const Form = () => {
     const form = useRef();
     const [isAnimating, setIsAnimating] = useState(false)
-    
+    const [isSubmitted, setIsSubmitted] = useState(false)
+
     const sendEmail = (e) => {
         e.preventDefault()
+        setIsAnimating(true)
 
-    setIsAnimating(true)
-
-    emailjs.sendForm('service_jwfin6b', 'template_h2q8t2x', form.current, 'gakAFlqNv_rU9_vuG')
+        emailjs.sendForm('service_jwfin6b', 'template_h2q8t2x', form.current, 'gakAFlqNv_rU9_vuG')
         .then((result) => {
             console.log(result.text)
+            setIsSubmitted(true)
         }, (error) => {
             console.log(error.text)
         })
@@ -48,8 +49,9 @@ export const Form = () => {
 
             <button
                 type="submit"
-                className={isAnimating ? 'animate-button' : ''}>
-                Envoyer
+                className={isAnimating ? 'animate-button' : ''}
+            >
+                {isSubmitted ? "Envoyé" : "Envoyer"}
             </button>
         </form>
     )

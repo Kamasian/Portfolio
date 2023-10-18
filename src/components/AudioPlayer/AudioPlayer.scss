@@ -1,0 +1,13 @@
+.audioPlayer {
+    background-color: transparent;
+    border: none;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    border-radius: 50%;
+    z-index: 2;
+    cursor: pointer;
+    img {
+        height: 80px;
+    }
+}

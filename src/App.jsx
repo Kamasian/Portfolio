@@ -9,22 +9,36 @@ import Oeuvres from "./pages/Oeuvres/Oeuvres"
 import Contact from "./pages/Contact/Contact"
 import Loader from "./components/Loader/Loader"
 import Loader2 from "./components/Loader2/Loader2"
+import SkipButton from "./components/SkipButton/SkipButton"
+import AudioPlayer from "./components/AudioPlayer/AudioPlayer"
+import music from "./assets/song-1.mp3"
 
 export default function App() {
     const [isLoading, setIsLoading] = useState(true)
     const [isLoading2, setIsLoading2] = useState(false)
     const [contentVisible, setContentVisible] = useState(false)
+    const [skipLoading, setSkipLoading] = useState(false)
 
     useEffect(() => {
-        setTimeout(() => {
+        if (skipLoading) {
             setIsLoading(null)
-            setIsLoading2(true)
+            setIsLoading2(null)
+            setContentVisible(true)
+        } else {
             setTimeout(() => {
-                setIsLoading2(null)
-                setContentVisible(true)
-            }, 4000)
-        }, 9600)
-    }, [])
+                setIsLoading(null)
+                setIsLoading2(true)
+                setTimeout(() => {
+                    setIsLoading2(null)
+                    setContentVisible(true)
+                }, 4000)
+            }, 9600)
+        }
+    }, [skipLoading])
+
+    const handleSkipLoading = () => {
+        setSkipLoading(true)
+    };
 
     return (
         <WindowWidthDetector>
@@ -32,11 +46,12 @@ export default function App() {
                 <BrowserRouter>
                     <NoiseCanvas
                         width={window.innerWidth}
-                        height={window.innerHeight} />
-                    {windowWidth < 600 ? (
+                        height={window.innerHeight}
+                    />
+                    {windowWidth < 768 ? (
                         <>
-                            {isLoading && <Loader />}
-                            {isLoading2 && <Loader2 />}
+                            {isLoading && !skipLoading && <Loader />}
+                            {!skipLoading && isLoading2 && <Loader2 />}
                             {contentVisible && (
                                 <>
                                     <Header />
@@ -49,21 +64,34 @@ export default function App() {
                         </>
                     ) : (
                         <>
-                            {isLoading && <Loader />}
-                            {isLoading2 && <Loader2 />}
+                            {isLoading && !skipLoading && <Loader />}
+                            {!skipLoading && isLoading2 && <Loader2 />}
                             {contentVisible && (
                                 <>
                                     <Header />
                                     <Routes>
-                                        <Route path="accueil" element={<Home />} />
-                                        <Route path="oeuvres" element={<Oeuvres />} />
-                                        <Route path="contact" element={<Contact />} />
+                                        <Route
+                                            path="/"
+                                            element={<Home />}
+                                        />
+                                        <Route
+                                            path="/oeuvres"
+                                            element={<Oeuvres />}
+                                        />
+                                        <Route
+                                            path="/contact"
+                                            element={<Contact />}
+                                        />
                                     </Routes>
                                     <Footer />
                                 </>
-                            )} 
+                            )}
                         </>
                     )}
+                    {(isLoading || isLoading2) && !skipLoading ? (
+                        <SkipButton onClick={handleSkipLoading} />
+                    ) : null}
+                    <AudioPlayer audioSource={music} />
                 </BrowserRouter>
             )}
         </WindowWidthDetector>

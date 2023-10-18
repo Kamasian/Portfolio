@@ -3,8 +3,8 @@ import Pellicule from "../../components/Pellicule/Pellicule"
 import Carousel from "../../components/Carousel/Carousel"
 import ProjectDescription from "../../components/ProjectDescription/ProjectDescription"
 import { projectList } from "../../data/projectList"
-import openDescription from "../../assets/img/icons/voirDescription.webp"
-import closeDescription from "../../assets/img/icons/fermerDescription.webp"
+import openDescription from "/assets/img/icons/voirDescription.webp"
+import closeDescription from "/assets/img/icons/fermerDescription.webp"
 
 export default function Oeuvres() {
     const [currentIndex, setCurrentIndex] = useState(0)

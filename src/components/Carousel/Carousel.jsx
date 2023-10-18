@@ -1,6 +1,6 @@
 import Image from "../Image/Image"
-import ticketUp from "../../assets/img/icons/ticketUp.webp"
-import ticketDown from "../../assets/img/icons/ticketDown.webp"
+import ticketUp from "/assets/img/icons/ticketUp.webp"
+import ticketDown from "/assets/img/icons/ticketDown.webp"
 
 export default function Carousel({ currentIndex, onIndexChange, projectList }) {
 

@@ -8,7 +8,7 @@ export default function Home() {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setCurrentIndex((prevIndex) => (prevIndex + 1) % imagesHome.length);
+            setCurrentIndex((prevIndex) => (prevIndex + 1) % imagesHome.length)
         }, 2500)
 
         return () => clearInterval(interval)
@@ -18,6 +18,7 @@ export default function Home() {
         <main
             className="mainHome"
             id="mainHome">
+            
             <div className="presentationText">
                 <h2>JokerDev, Développeur Front-End</h2>
                 <Paragraph
@@ -28,7 +29,7 @@ export default function Home() {
                     text="Je me dirige donc vers le développement informatique, car cela correspond à mes ambitions." />
                 <Paragraph
                 // text="Faire des animations, obtenir un résultat concret rapidement, c'est extrêmement satisfaisant !" />
-                    text="En formation chez OpenClassRooms pendant 9 mois, ce sera une première étape" />
+                    text="En formation chez OpenClassRooms pendant 9 mois, ce sera une première étape." />
                 <Paragraph
                     text="Après le HTML, le CSS, JavaScript et React, j'ai hâte d'approfondir mes connaissances et d'en découvrir encore plus." />
                 <Paragraph

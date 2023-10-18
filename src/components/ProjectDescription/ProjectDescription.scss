@@ -1,6 +1,6 @@
 .projectDescriptionOverlay {
     position: fixed;
-    top: 0;
+    top: 116px;
     right: -100%;
     width: 40%;
     height: 100%;
@@ -79,10 +79,11 @@ h3 {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .projectDescriptionOverlay {
         width: 100%;
-        z-index: 1;
+        z-index: 3;
+        top: 0;
         .projectDescription {
             div {
                 p {

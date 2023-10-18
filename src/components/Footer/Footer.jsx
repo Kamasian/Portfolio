@@ -1,12 +1,13 @@
 import Image from "../Image/Image"
-import linkedin from "../../assets/img/icons/linkedin.webp"
-import github from "../../assets/img/icons/github.webp"
-import discord from "../../assets/img/icons/discord.webp"
+import linkedin from "/assets/img/icons/linkedin.webp"
+import github from "/assets/img/icons/github.webp"
+import discord from "/assets/img/icons/discord.webp"
 
 export default function Footer() {
     return (
         <footer>
-            <p>© JokerDev 2023 Tous droits réservés.</p>
+            <p>© JokerDev 2023</p>
+            <p>Tous droits réservés.</p>
             <div>
                 <a
                     href="https://www.linkedin.com/in/jokerdev/"
